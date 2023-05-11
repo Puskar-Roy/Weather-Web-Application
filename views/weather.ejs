@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/13f2f83b04.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <%- include("../partials/navbar")-%>
+
+    <div class="main_container">
+        <form class="temp">
+            <input id="cityName" type="text" autocomplete="off" placeholder="Enter City Nmae ">
+            <input id="cityBtn" type="submit" value="Search" >
+        </form>
+    </div>
+
+    <div class="tempInformation">
+        <div class="topLayer">
+            <p id="date">Date</p>
+            <p id="time">Time</p>
+        </div>
+        <div class="mainLayer">
+            <p id="city_name">Get Output Here</p>
+            <div class="middle-layer data-hide">
+                <p class="tempa"><span class="tempaaa" id="tempa">0</span><span id="c"></span><sup>O</sup>C</p>
+                <p class="temp_icons"><img id="ic" src="https://openweathermap.org/img/wn/01n@2x.png" alt=""></p>
+            </div>
+            <div class="last_layer">
+                
+            </div>
+
+        </div>
+
+    </div>
+    <div class="extra_info">
+        
+        <div class="content">
+            <h3>Description - <span id="description"></span></h3>
+            <h3>Region - <span id="region"></span></h3>
+            <h3>Wind Speed(mph) - <span id="wind"></span></h3>
+            <h3>Wind Direction - <span id="wind_dir"></span></h3>
+            <h3>Atmospheric pressure - <span id="atmp"></span></h3>
+            <h3>Latitude - <span id="lat"></span></h3>
+            <h3>Longitude - <span id="lang"></span></h3>
+            
+            
+        </div>
+
+    </div>
+    
+
+
+
+
+
+
+    <%- include("../partials/footer")-%>
+    <script src="js/index.js"></script>
+</body>
+</html>

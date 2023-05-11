@@ -1,0 +1,294 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Palanquin+Dark:wght@700&family=Raleway:wght@900&family=Roboto:wght@300;400&family=Secular+One&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Secular One', sans-serif; */
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #0097e6;
+    --bg-color: #1e272e;
+}
+html{
+font-size: 62.5%;
+}
+body{
+font-family: 'Roboto', sans-serif;
+font-size: 1.6rem;
+height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+
+header{
+    color: white;
+    background-color: var(--bg-color);
+    z-index: 100000;
+    position: sticky;
+    top: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 120rem;
+    margin:0 auto ;
+    padding: 3rem;
+}
+.options ul{
+    display: flex;
+    gap: 30px;
+}
+.options ul li{
+    list-style: none;
+}
+
+.options ul li a:hover{
+    color: var(--main-color);
+}
+.options ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--bg-color);
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    max-width: 120rem;
+    margin:0 auto ;
+    flex-wrap: wrap;
+}
+.heroImages{
+    max-width: 50rem;
+  
+}
+.herocontent{
+    max-width: 70rem;
+  
+}
+.herocontent{
+    padding: 2rem;
+    padding-top: 14rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem   ;
+    font-size: 4rem;
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+.herocontent p{
+    font-size: 4rem;   
+/* font-family: 'Raleway', sans-serif; */
+font-style: bold;
+font-family: 'Roboto', sans-serif;
+
+
+}
+.herocontent h1{
+    font-size: 2.5rem;  
+}
+.heroImages img{
+    max-width: 50rem;
+}
+.heroSpan{
+    color: var(--main-color);
+    font-family: 'Raleway', sans-serif;
+
+}
+.btnn{
+    border-radius: 10px;
+    max-width: 10rem;
+    min-height: 3rem;
+    background-color: rgb(219, 219, 219);
+    color: var(--bg-color);
+    border: none;
+/* font-family: 'Raleway', sans-serif; */
+font-family: 'Roboto', sans-serif;
+transition: 0.6s ease ;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.btnn:hover{
+    background-color: rgb(192, 192, 192);
+    transition: 0.6s ease ;
+
+
+}
+.btnn a{
+    text-decoration: none;
+    color: var(--bg-color);
+
+}
+.herotext{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+footer{
+    margin-top: auto;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--bg-color);
+    color: white;
+    text-align: center;
+}
+footer p{
+    padding-top: 1rem;
+}
+.err_section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.err{
+    max-width: 120rem;
+    margin:0 auto ;
+}
+.err_imagee img{
+    width:500px; 
+}
+.err_content h1{
+    padding-left: 6rem;
+    font-family: 'Raleway', sans-serif;
+
+}
+.tempInformation{
+    width: 40rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;  
+}
+.topLayer{
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content:space-between ;
+    font-weight: 300;
+}
+.mainLayer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.mainLayer #city_name{
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.mainLayer .middle-layer{
+    display: flex;
+    gap: 18rem;
+    padding: 1rem;
+    justify-content: space-around;
+
+}
+
+.tempa , .temp_icons{
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+sup{
+    font-size: 2rem;
+    position: relative;
+    top: -10px;
+}
+
+.main_container{
+    width: 60%;
+    /* position: absolute; */
+    margin: 5rem auto;
+    text-align: center;
+}
+.temp input[type="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    outline: none;
+    border: none;
+    background-color: var(--bg-color);
+    color :white;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+    
+}
+.temp input[type="submit"]{
+    position: absolute;
+    width: 15rem;
+    height: 4.8rem;
+    right: 313.8px;
+    top: 13.8rem;
+    border: none;
+    padding: 0 3rem;
+    border-radius: 3rem;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.6rem;
+    
+    
+}
+::placeholder{
+    color: white;
+}
+#cityBtn:hover{
+    background-color: #0097e6;
+    color: black;
+
+}
+#ic{
+    height: 5rem;
+    width: 5rem;
+}
+.temp_icons{
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.extra_info{
+    width: 40rem;
+    margin: auto;
+    margin-top: -10px;
+    min-height: 20rem;
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--bg-color);  
+}
+.extra_info h3{
+    /* font-family: 'Raleway', sans-serif; 
+    font-size: 2rem;
+    font-weight: 300;    */
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;   
+}
+#description ,#region,#normal,#wind,#wind_dir,#atmp,#lat,#lang{
+    font-family: 'Roboto', sans-serif;
+   /*  font-weight: 300;    */
+
+    /* font-family: 'Raleway', sans-serif;  */
+    font-size: 2rem;
+    font-weight: 300; 
+    font-style: bold;
+
+  
+   
+}
